@@ -1,6 +1,6 @@
 # C King Journey 👑 | From Zero to Hero in C Programming
 
-> 40 LPA Ready | 10 Levels Completed | Self-taught in 2026
+> 40 LPA Ready | 10 Levels Completed | 1st Year Student | Self-taught in 2026
 
 ### 🔥 About This Repo
 I'm learning C programming from scratch to advanced. Started with `printf("Hello")` and now building logic with Arrays, Pointers, Functions. This repo is my proof of work.
