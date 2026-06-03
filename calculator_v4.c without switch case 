@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main() {
+    char op; // + - * / ku
+    float num1, num2, result;
+    char choice = 'Y'; // Y = Yes, N = No
+    
+    printf("=== C KING CALCULATOR v4 - IF-ELSE VERSION ===\n");
+    
+    while(choice == 'Y' || choice == 'y') {
+        
+        printf("\nEnter operator: +  -  *  /  : ");
+        scanf(" %c", &op); // %c munnadi space mukkiyam da
+        
+        printf("Number 1 kudu: ");
+        scanf("%f", &num1);
+        printf("Number 2 kudu: ");
+        scanf("%f", &num2);
+        
+        // SWITCH KU BADHILA IF-ELSE LADDER
+        if(op == '+') {
+            result = num1 + num2;
+            printf("Answer = %.2f", result);
+        }
+        else if(op == '-') {
+            result = num1 - num2;
+            printf("Answer = %.2f", result);
+        }
+        else if(op == '*') {
+            result = num1 * num2;
+            printf("Answer = %.2f", result);
+        }
+        else if(op == '/') {
+            if(num2 != 0) {
+                result = num1 / num2;
+                printf("Answer = %.2f", result);
+            } else {
+                printf("0 vaala divide panna mudiyathu da");
+            }
+        }
+        else {
+            printf("+ - * / idhula edhachum kudu da C KING");
+        }
+        
+        printf("\n\nInnum kanaku podanuma? Y/N: ");
+        scanf(" %c", &choice); // %c munnadi space marakkathe
+    }
+    
+    printf("\nNandri da C KING. 40 LPA adichitu vaa 👑");
+    return 0;
+}
