@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int marks[] = {80, 90, 70}; // 3 dabba
+    int sum = 0; // Total podura dabba. 0 la start pannanum
+    
+    // Door 0 la irundhu 3 varai poyi ellam kootu
+    for(int i = 0; i < 3; i++) {
+        sum = sum + marks[i]; // Ovoru door ah thora total la add pannu
+        printf("Step %d: sum = %d\n", i, sum); // Step by step paaru
+    }
+    
+    printf("Final Total = %d\n", sum);
+    return 0;
+}
